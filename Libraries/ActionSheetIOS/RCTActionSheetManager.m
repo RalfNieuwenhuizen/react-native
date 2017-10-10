@@ -146,7 +146,7 @@ RCT_EXPORT_METHOD(showShareActionSheetWithOptions:(NSDictionary *)options
       }
       [items addObject:data];
     } else {
-      [items addObject:URL];
+      [items addObject:URL.absoluteString];
     }
   }
   if (items.count == 0) {
